@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@font-face {font-family:ITCAvantGardeStd; src:url(file:///Users/kimjiyoung/Desktop/web/test_sp/ITCAvantGardeStd-Bold.otf)}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "본고딕";
+  background-color: #eee;
+  color: #000;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.container p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  line-height: 0rem;
+
+}
+.typed-text {
+  font-weight: 900;
+  font-family: "본고딕", sans-serif;
+  font-size: 1.7rem;
+  color: #000;
+}
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 30px;
+
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+.aa {
+  color: #ff8aff;
+  font-size: 1.7rem;
+  font-family: "ITCAvantGardeStd";
+  font-weight: bold;
+  vertical-align: top;
+}
+.bb {
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.cc {
+  color: #ff8aff;
+  font-size: 1.7rem;
+  font-family: "ITCAvantGardeStd";
+  font-weight: bold;
+  vertical-align: bottom;
+}
+@keyframes blink {
+  0% { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100% { background-color: #ccc; }
+}
